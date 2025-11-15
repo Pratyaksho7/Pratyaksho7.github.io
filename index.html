@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pratyaksh Semwal — Portfolio</title>
+<style>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navigation */
+header {
+    background-color: #111;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background-color: #111;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff0000;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.about-content img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+    object-fit: cover;
+}
+
+.about-content p {
+    max-width: 800px;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Education / Interests */
+.skills, .education {
+    margin: 20px 0;
+}
+
+.skills ul, .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li, .education ul li {
+    background-color: #111;
+    color: #fff;
+    margin: 10px auto;
+    padding: 12px;
+    max-width: 400px;
+    border-left: 5px solid #ff0000;
+    border-radius: 4px;
+}
+
+/* Projects */
+.project {
+    background-color: #111;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(255,0,0,0.4);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    color: #ff0000;
+}
+
+.project a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.contact-link img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-top: 2px solid #ff0000;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Education / Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Skills</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+    <img src="https://i.pinimg.com/1200x/83/bc/8b/83bc8b88cf6bc4b4e04d153a418cde62.jpg" alt="Logo" style="width: 340px; margin-bottom: 25px;">
+    <h1>Hi, I'm Pratyaksh Semwal</h1>
+    <p>Web Developer | Competitive Programmer | AI/ML Enthusiast </p>
+    <a href="#contact" class="btn">Get in Touch</a>
+</section>
+
+<section id="about">
+    <h2 style="color:#ff0000;">About Me</h2>
+    <div class="about-content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSooCX-nPSHN0kCVdUnm-eptCPvUF04YaxeHQ&s" alt="Profile Picture">
+        <p>Hello! I'm Pratyaksh Semwal, a motivated developer passionate about Machine Learning, Artificial Intelligence, Competitive Programming, and Web Development. I enjoy solving challenging algorithmic problems and building intelligent applications. Currently, I am pursuing my B.Tech in Computer Science from Delhi Technological University, where I work on AI/ML projects, web applications, and participate in coding competitions. My goal is to create innovative software solutions that combine AI with real-world problem-solving. I am always eager to learn new technologies and improve my skills to contribute to exciting projects in the tech world.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 style="color:#ff0000;">Education & Interests</h2>
+    <div class="education">
+        <h3>Education</h3>
+        <ul>
+            <li>High Schooling from Summer Valley School Dehradun(2022-2024)</li>
+            <li>Currently pursuing Bachelor of Technology  in Computer Science from Delhi Technological University (2025-2029)</li>
+        </ul>
+    </div>
+    <div class="skills">
+        <h3>Interests</h3>
+        <ul>
+            <li>Machine Learning & Artificial Intelligence</li>
+            <li>Competitive Programming</li>
+            <li>Web Development (Frontend & Backend)</li>
+        </ul>
+    </div>
+</section>
+<h2 style="color:#ff0000;"></h2>
+
+
+<section id="skills">
+  <h2 style="color:#ff0000; text-align:center; margin-bottom:25px;">Skills</h2>
+  <div class="skills-container" style="display:flex; flex-wrap:wrap; gap:15px; justify-content:center;">
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">C</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">C++</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">Java</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">Python</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">HTML</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">CSS</h4>
+    </div>
+
+    <div class="skill-card" style="background-color:#1a1a1a; padding:20px 25px; border-radius:10px; min-width:180px; max-width:200px; border:2px solid #ff0000; text-align:center;">
+      <h4 style="color:#ff0000; margin-bottom:0;">Git & GitHub</h4>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+
+
+<section id="projects">
+    <h2 style="color:#ff0000;">Projects</h2>
+    <div class="project">
+        <img src="data:image/jpeg;base64,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" alt="AI House Price Predictor">
+        <h3>AI/ML House Price Predictor</h3>
+        <p>An AI/ML-based project that predicts house prices based on features like area, location, and amenities using regression models.</p>
+        <a href="https://github.com/Pratyaksho7/house-price-predictor" target="_blank"></a>
+    </div>
+    <div class="project">
+        <img src="data:image/png;base64,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" alt="Flappy Bird Game">
+        <h3>Flappy Bird Game</h3>
+        <p>A fun game inspired by Flappy Bird, built using JavaScript and HTML5 Canvas with interactive gameplay mechanics.</p>
+        <a href="https://github.com/Pratyaksho7/flappy-bird-game" target="_blank"></a>
+    </div>
+</section>
+
+<section id="contact-section" style="padding:60px 20px; background-color:#111; color:#fff; text-align:center;">
+  <div class="section-header">
+    <h2 style="color:#ff0000;">Contact</h2>
+    <p class="text-muted" style="color:#aaa;">Let’s work together</p>
+  </div>
+
+  <div class="contact-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px;">
+
+    <aside class="card" style="background-color:#1a1a1a; padding:25px; border-radius:10px; max-width:400px; flex:1; min-width:300px; border:2px solid #ff0000;">
+      <h3 style="color:#ff0000;">Get in Touch</h3>
+
+      <ul class="list" style="display:flex; gap:20px; justify-content:center; align-items:center; margin-top:20px; padding:0; list-style:none;">
+        <li>
+          <a href="mailto:pratyakshsemwal10c@gmail.com" title="Email" style="display:inline-block; transition: transform 0.3s;">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" style="width:40px;">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/" target="_blank" title="GitHub" style="display:inline-block; transition: transform 0.3s;">
+            <img src="https://img.icons8.com/ios-glyphs/60/ffffff/github.png" alt="GitHub" style="width:40px;">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/pratyaksh-semwal-42796a369" target="_blank" title="LinkedIn" style="display:inline-block; transition: transform 0.3s;">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" style="width:40px;">
+          </a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+
+      <div style="margin-top:15px; font-size:14px; color:#9aa3b2;">
+        
+      </div>
+    </aside>
+  </div>
+</section>
+
+<script>
+  // Add simple hover animation on icons
+  const icons = document.querySelectorAll('.card ul li a');
+  icons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => icon.style.transform = 'scale(1.2)');
+    icon.addEventListener('mouseleave', () => icon.style.transform = 'scale(1)');
+  });
+</script>
+
+<footer>
+    <p>&copy; 2025 Pratyaksh Semwal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
